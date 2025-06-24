@@ -1,0 +1,773 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#sectionHomePage {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.home-page-left-side {
+  position: relative;
+  z-index: 2;
+  width: 50vw;
+  height: 100vh;
+  color: white;
+  padding: 2rem;
+  margin-left: 310px;
+}
+
+.home-page-podcast-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.video-blend-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+      background: linear-gradient(
+        to right,
+        #1E293B 0%,
+        #1E293B 25%,        /* Fully solid for left side */
+        rgba(30, 41, 59, 0.85) 35%,
+        rgba(30, 41, 59, 0.4) 50%,
+        rgba(30, 41, 59, 0) 65%
+    );
+  z-index: 1;
+  pointer-events: none;
+}
+
+.navbar-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+  margin-top: 29px;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.nxt-talks-navbar-logo{
+    height: 51px;
+}
+
+.home-page-teaches-heading{
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  font-family: sans-serif;
+
+  margin-top: 150px;
+  line-height: 1.5;
+
+}
+
+.amazon-logo-h1tag{
+  height: 1em;
+  vertical-align: middle;
+  margin: 0 6px;
+}
+
+.claim-free-access-button{
+  border-style: none;
+  border-radius: 8px;
+  background-color: #2563EB;
+  color: white;
+  font-size: 15px;
+  padding: 10px 20px;
+  width: 400px;
+  margin-top: 30px;
+}
+
+.watch-trailer-button{
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  border-radius: 8px;
+  background-color: transparent;
+  color: white;
+  font-size: 15px;
+  padding: 10px 20px;
+  width: 400px;
+  margin-top: 20px;
+}
+
+.get-podcast-free-text{
+  color: white;
+  margin-top: 20px;
+  font-family: sans-serif;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.speakers-dream-companies-background{
+  background-color: #0F172A;
+  width: 100vw;
+  padding: 50px;
+}
+
+.speakers-dream-companies-heading{
+  color: #f1f5f9;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 48px;
+  line-height: 1.5;
+}
+
+.companies-img{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block; /* removes unwanted space below the image */
+  object-fit: cover;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.insider-knowledge-background{
+  background-image: url('https://res.cloudinary.com/dc1zemb0j/image/upload/v1750765257/InsiderKnowledgeSection_kesuft.png');
+  background-size: cover;
+  height: 130vh;
+
+}
+
+.section-3-heading{
+  color: white;
+  text-align: center;
+  font-size: 48px;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding-top: 120px;
+}
+
+.section-3-subheading{
+  color: #CBD5E1;
+  font-size: 20px;
+  text-align: center;
+  font-family: sans-serif;
+  margin: 24px 0px 0px;
+}
+
+.section-3-tabs {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    max-width: 1000px; /* wider container for tabs and cards */
+    margin: 0 auto;
+      
+    }
+
+.section-3-tab-buttons {
+      display: flex;
+      gap: 10px;
+  justify-content: center;
+  margin: 40px 0;
+    }
+
+.section-3-tab-buttons label {
+      padding: 10px 20px;
+      background-color: transparent;
+      color: white;
+      border-style: solid;
+      border-color: white;
+      border-width: 1px;
+      cursor: pointer;
+      border-radius: 30px;
+      transition: background 0.3s;
+       white-space: nowrap;   
+    }
+
+.section-3-tab-buttons label:hover  {
+      background-color: #ddd;
+      color: black;
+    }
+
+input[type="radio"] {
+      display: none;
+    }
+
+.tab-content {
+  display: none;
+  padding: 15px;
+  border: none;
+  background: transparent;
+  width: 100%;
+  box-sizing: border-box;
+    }
+
+#tab1:checked ~ .tab-contents #content1,
+#tab2:checked ~ .tab-contents #content2,
+#tab3:checked ~ .tab-contents #content3,
+#tab4:checked ~ .tab-contents #content4,
+#tab5:checked ~ .tab-contents #content5,
+#tab6:checked ~ .tab-contents #content6,
+#tab7:checked ~ .tab-contents #content7,
+#tab8:checked ~ .tab-contents #content8{
+      display: block;
+    }
+
+input:checked + label {
+      background-color: #ccc;
+    }
+
+.section-3-card {
+    background-color: #334155;
+    border-radius: 16px;
+    width: 300px;
+    color: white;
+    overflow: hidden;
+    position: relative;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.section-3-card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.section-3-card-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #3b82f6;
+    color: white;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 12px;
+}
+
+.section-3-card-content {
+    padding: 16px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section-3-card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #F8FAFC;
+    line-height: 1.5;
+}
+
+.section-3-card-duration,
+.section-3-card-role {
+    font-size: 16px;
+    margin: 4px 0;
+}
+
+.section-3-card-link {
+    margin-top: 12px;
+    font-size: 16px;
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.section-3-card-name{
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #CBD5E1;
+  font-size: 18px;
+}
+
+.testimonial-background{
+  background-color: #0c0c1d;
+ 
+  padding: 50px 20px;
+}
+
+.testimonial-heading{
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 1.5;
+  font-family: sans-serif;
+  margin-top: 40px;
+  text-align: center;
+
+}
+
+.testimonial-subheading{
+  font-family: 'Times New Roman', Times, serif;
+  color: orange;
+  font-size: 30px;
+  padding: 8px  20px;
+  border-style: solid;
+  border-color: orange;
+  border-width: 1px;
+  display: inline-block;
+  border-radius: 30px;
+  background-color: #1A1A2E;
+  
+}
+
+/* Hide radio buttons */
+input[type="radio"] {
+    display: none;
+} 
+
+/* Carousel container */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 250px;
+}
+
+/* Card styling */
+.testimonial-card {
+    position: absolute;
+    width: 800px;
+    height: 250px;
+    margin-top: 10px;
+    background: #1d1d2f;
+    border-radius: 10px;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: all 0.4s ease;
+    pointer-events: none;
+    margin-right: auto;
+
+}
+
+#slide1:checked~.carousel #testimonial-card1,
+#slide2:checked~.carousel #testimonial-card2,
+#slide3:checked~.carousel #testimonial-card3 {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+}
+
+.testimonial-profile {
+    display: flex;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.testimonial-profile img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.testimonial-card-name {
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.testimonial-card-feedback {
+  text-align: center;
+    font-size: 25px;
+    color: #ccc;
+    margin-left: 30px;
+}
+
+.testimonial-message {
+    font-size: 20px;
+    margin: 5px;
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+.testimonial-message a {
+    color: #4da6ff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 30px;
+  
+}
+
+/* Dot navigation */
+.dots {
+  margin-top: 30px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.dots label {
+    height: 12px;
+    width: 12px;
+    background-color: #888;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#slide1:checked~.dots label[for="slide1"],
+#slide2:checked~.dots label[for="slide2"],
+#slide3:checked~.dots label[for="slide3"] {
+    background-color: #ffffff;
+}
+
+.podcast-section-background{
+  background-image: url('https://res.cloudinary.com/dc1zemb0j/image/upload/v1750765254/PodcastSectionBackground_yfesql.png');
+background-size: cover;
+height: 90vh;
+
+}
+
+.podcast-section-heading{
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  padding-top: 100px;
+  line-height: 1.5;
+  padding-left: 400px;
+}
+
+.features-list{
+  padding-left: 400px;
+  color: white;
+  font-size: 30px;
+  list-style-type: none;
+  font-family: sans-serif;
+}
+.features-icon{
+    font-size: 1.2em; 
+    margin-bottom: 30px; 
+    margin-top: 30px;
+    color: white; 
+}
+
+.podcast-section-button{
+  margin-left: 400px;
+  margin-bottom: 30px;
+}
+
+.claim-free-access-section-background{
+   margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1A1A2E;
+    color: #fff; 
+    min-height: 50vh; 
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+/* Right side: Form Container */
+.access-form-container {
+    flex: 1; /* Allows the form container to grow */
+    min-width: 320px; /* Minimum width for the form before wrapping */
+    background-color: #2A2F45; /* Darker background for the form card */
+    padding: 30px; /* Padding inside the form card */
+    border-radius: 8px; /* Rounded corners for the form card */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    max-width: 450px; /* Limit the max width of the form for better aesthetics */
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+.form-group {
+    margin-right: 20px; /* Space between form fields */
+}
+
+.form-group label {
+    display: block; /* Make label take full width */
+    font-size: 0.9em;
+    color: #ccc; /* Lighter color for labels */
+    margin-bottom: 8px; /* Space between label and input */
+}
+
+/* Styling for text/tel inputs */
+.form-group input[type="text"],
+.form-group input[type="tel"] {
+    width: 100%; /* Take full width of parent */
+    padding: 12px 15px;
+    background-color: #1A1A2E; /* Dark input background */
+    border: 1px solid #333; /* Subtle border */
+    border-radius: 5px;
+    color: #fff; /* White text for input */
+    font-size: 1em;
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+.form-group input::placeholder {
+    color: #888; /* Placeholder text color */
+}
+
+/* Phone Number Input Group */
+.phone-input-group {
+    display: flex; /* Use flexbox to align country code and phone input */
+    gap: 10px; /* Space between country code and phone input */
+}
+
+.country-code-select {
+    padding: 12px 10px;
+    background-color: #1A1A2E; /* Dark background */
+    border: 1px solid #333; /* Subtle border */
+    border-radius: 5px;
+    color: #fff; /* White text */
+    font-size: 1em;
+    appearance: none; /* Remove default select arrow for custom styling */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23ffffff" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>'); /* Custom dropdown arrow */
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 1em;
+    min-width: 100px; /* Adjust min-width as needed */
+    cursor: pointer;
+}
+
+.phone-input-group input[type="tel"] {
+    flex-grow: 1; /* Allows the phone input to take remaining space */
+}
+
+/* Get OTP Button */
+.otp-button {
+    width: 100%; /* Full width button */
+    padding: 15px 20px;
+    background-color: #3B82F6; /* Blue button background */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.otp-button:hover {
+    background-color: #2563EB; /* Darker blue on hover */
+}
+
+
+.free-access-heading{
+  font-size: 3em; 
+  font-weight: 700; 
+  line-height: 1.5;
+  color: #fff;    
+  margin-top: 120px;
+  margin-right: 30px;
+}
+
+.disclaimer-section-background{
+  background-color: #1E283A;
+  background-size: cover;
+  height: 10vh;
+}
+
+.disclaimer-text{
+  font-size: 20px;
+  font-weight: normal;
+  font-family: sans-serif;
+  color: white;
+  padding-left: 400px;
+  padding-top: 30px;
+}
+
+.footer-section-background{
+   margin: 0;
+    font-family: Arial, sans-serif; /* Fallback font */
+    background-color: #1A1A2E; /* Dark background color consistent with your previous images */
+    color: #fff; /* Default text color */
+}
+
+
+
+/* Main Footer Container */
+.main-footer {
+    background-color: #1A1A2E; /* Should match body background for seamless look */
+    padding: 60px 20px 30px; /* Top, horizontal, bottom padding */
+    color: #ccc; /* Lighter text color for general footer text */
+    font-size: 0.95em; /* Slightly smaller font size */
+    line-height: 1.6;
+}
+
+/* Top Section of Footer (Columns) */
+.footer-top {
+    display: flex;
+    flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+    justify-content: space-around; /* Distribute space between columns */
+    gap: 40px; /* Space between columns */
+    max-width: 1200px; /* Limit footer width */
+    margin: 0 auto; /* Center the footer content */
+    margin-bottom: 40px; /* Space above the divider */
+}
+
+.footer-col {
+    flex: 1; /* Allows columns to grow */
+    min-width: 250px; /* Minimum width before wrapping */
+    padding: 10px; /* Padding inside each column */
+}
+
+/* Footer Column Headings */
+.footer-heading, .reach-us-heading {
+    color: #fff; /* White color for headings */
+    font-size: 1.2em;
+    font-weight: 600; /* Semi-bold */
+    margin-top: 0;
+    margin-bottom: 25px;
+    /* font-family: 'Poppins', sans-serif; */ /* If you use a custom font */
+}
+
+/* Branding Column */
+.footer-branding .footer-logo {
+    max-width: 150px; /* Adjust logo size */
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.footer-branding .reach-us-heading {
+    margin-bottom: 15px; /* Slightly less margin for "Reach Us" */
+}
+
+.contact-item {
+    display: flex; /* For icon and text alignment */
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-item .icon {
+    font-size: 1.2em;
+    margin-right: 10px;
+    color: #fff; /* White icon color */
+}
+
+.contact-item a {
+    color: #ccc; /* Link color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #3B82F6; /* Blue hover color */
+}
+
+/* Quick Links Column */
+.footer-links .links-group {
+    display: flex; /* Arrange link lists side-by-side */
+    gap: 30px; /* Space between the two link lists */
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links li:last-child {
+    margin-bottom: 0;
+}
+
+.footer-links a {
+    color: #ccc; /* Link color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #3B82F6; /* Blue hover color */
+}
+
+/* Payment Methods & Address Column */
+.payment-logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Space between payment logos */
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.payment-logos img {
+    max-height: 50px; /* Adjust height of payment logos */
+    width: auto; /* Maintain aspect ratio */
+}
+
+.address-info p {
+    margin: 0; /* Remove default paragraph margin */
+}
+
+/* Footer Divider */
+.footer-divider {
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Light gray line */
+    max-width: 1200px;
+    margin: 0 auto 30px; /* Space above and below */
+}
+
+/* Footer Bottom Section (Social & Legal Links) */
+.footer-bottom {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: space-between; /* Space out social and legal links */
+    align-items: center; /* Vertically align items */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 10px; /* Small padding above for visual separation from divider */
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px; /* Space between social icons */
+    margin-bottom: 15px; /* Margin for stacking on small screens */
+}
+
+.social-icons img {
+    width: 28px; /* Size of social icons */
+    height: 28px;
+    border-radius: 50%; /* Make them circular */
+    background-color: rgba(255, 255, 255, 0.1); /* Light background for icons */
+    padding: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.social-icons img:hover {
+    background-color: #3B82F6; /* Blue hover for social icons */
+}
+
+.legal-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between legal links */
+    justify-content: center; /* Center links on small screens */
+    margin-bottom: 15px; /* Margin for stacking on small screens */
+}
+
+.legal-links a {
+    color: #ccc; /* Link color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+    white-space: nowrap; /* Prevent links from breaking mid-word */
+}
+
+.legal-links a:hover {
+    color: #3B82F6; /* Blue hover color */
+}
+
+

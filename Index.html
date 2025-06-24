@@ -1,0 +1,591 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nxt Talks Clone</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    </head>
+    <body>
+        <section id = "sectionHomePage">
+            <video autoplay muted loop playsinline class="home-page-podcast-video">
+                <source src = "https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/landing-section-bg-videos/amazon-video.mp4" type="video/mp4">
+            </video>
+            <div class ="video-blend-overlay"></div>
+            <div class="home-page-left-side">
+                <nav class="navbar">
+                    <div class="container-fluid">
+                        <a class="navbar-brand text-white" href="#">
+                        <img src="https://cdn.prod.website-files.com/64362e90abbff481a6d25ce8/64362e90abbff4d11fd25fa9_Frame%201000003044%20(2).svg" alt="Logo"  class="d-inline-block align-text-top nxt-talks-navbar-logo ">
+                        by NxtWave
+                        </a>
+                    </div>
+                </nav>
+                <h1 class="home-page-teaches-heading">A Sr. Recruiter at 
+                    <img src="https://cdn.prod.website-files.com/64362e90abbff481a6d25ce8/64362e90abbff483f9d25f89_Frame%201000002924%20(1).svg" alt="amazon-logo" class="amazon-logo-h1tag">
+                    <br>Teaches You About  <br><span style="color: #A3E635;"> Acing Interviews </span>
+                </h1>
+                <a href="#sectionClaimFreeAccess">
+                    <button class="claim-free-access-button">Claim Free Access</button>
+                </a>
+                <br>
+                <button class="watch-trailer-button" onclick="window.open('https://www.youtube.com/watch?v=MxF43cZxquo', '_blank')" >Watch Trailer </button>
+                <p class="get-podcast-free-text">Get 1 podcast worth 
+                    <span style="  text-decoration: line-through; text-decoration-color: #A3E635;text-decoration-thickness: 3px" > ₹2000 </span>
+                    <span style="font-weight: bold; color:#A3E635 ; font-size: 20px"> FREE </span>
+                </p>
+            </div>
+        </section>
+        <section id="sectionSpeakersDreamCompanies">
+            <div class="speakers-dream-companies-background">
+                <h2 class="speakers-dream-companies-heading">Our Speakers Come From <br> Your Dream Companies</h2>
+                <img class="companies-img" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/our-speaker-come-from-section/company-scroll-strip-row-1.png">
+                <img class="companies-img" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/our-speaker-come-from-section/company-scroll-strip-row-2.png">
+            </div>
+        </section>
+        <section id="sectionInsiderKnowledge">
+            <div class="insider-knowledge-background">
+                <h1 class="section-3-heading">A Rare Collection of Insider <br> Knowledge, All  Yours !</h1>
+                <p class="section-3-subheading">All secrets uncovered. Exclusive insights, Timely Advice and Personal Growth <br> Journeys straight from the tech experts.</p>
+                <div class="section-3-tabs">
+                    <!-- Hidden radio buttons -->
+                    <input type="radio" name="tab" id="tab1" checked>
+                    <input type="radio" name="tab" id="tab2">
+                    <input type="radio" name="tab" id="tab3">
+                    <input type="radio" name="tab" id="tab4">
+                    <input type="radio" name="tab" id="tab5">
+                    <input type="radio" name="tab" id="tab6">
+                    <input type="radio" name="tab" id="tab7">
+                    <input type="radio" name="tab" id="tab8">
+
+                    <!-- Labels act as buttons -->
+                    <div class="section-3-tab-buttons">
+                        <label for="tab1">🔥Trending</label>
+                        <label for="tab2">All</label>
+                        <label for="tab3">Tech</label>
+                        <label for="tab4">Career</label>
+                        <label for="tab5">CXO</label>
+                        <label for="tab6">Productivity</label>
+                        <label for="tab7">GSOC</label>
+                        <label for="tab8">Panel</label>
+                    </div>
+
+                    <!-- Info panels -->
+                    <div class="tab-contents">
+                    <div id="content1" class="tab-content ">
+                        <div class="section-3-card-container d-flex flex-row justify-content-center ">
+                            <a href="https://www.youtube.com/watch?v=YDfL0TfKS3M&t=1s" target="_blank" style="text-decoration: none; color: inherit;">
+                                <div class="section-3-card ">
+                                    <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/sandeep.png" alt="Speaker Image" class="section-3-card-image">
+                                    <div class="section-3-card-tag">Trailer</div>
+                                    <div class="section-3-card-content">
+                                        <h3 class="section-3-card-title">An Engineering Manager at Uber Teaches Programming</h3>
+                                        <p class="section-3-card-duration">⏱ 45:17 Mins</p>
+                                        <p class="section-3-card-name">Sandeep Gorthi</p>
+                                        <p class="section-3-card-role">Engineering Manager at Uber</p>
+                                        <a href="#" class="section-3-card-link">What You will Learn →</a>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=pDpwlapFss8&t=1s" target="_blank" style="text-decoration: none; color: inherit;">
+                                <div class="section-3-card ">
+                                    <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/pritesh.png" alt="Speaker Image" class="section-3-card-image">
+                                    <div class="section-3-card-tag">Trailer</div>
+                                    <div class="section-3-card-content">
+                                        <h3 class="section-3-card-title">A Sr. Recruiter at Amazon Teaches Acing Interviews</h3>
+                                        <p class="section-3-card-duration">⏱ 41:07 Mins</p>
+                                        <p class="section-3-card-name">Pritesh Malode</p>
+                                        <p class="section-3-card-role">Senior Recruiter at Amazon</p>
+                                        <a href="#" class="section-3-card-link">What You will Learn →</a>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://youtu.be/BKe0tIy4u0k" target="_blank" style="text-decoration: none; color: inherit;">
+                                <div class="section-3-card ">
+                                    <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/sanjay.png" alt="Speaker Image" class="section-3-card-image">
+                                    <div class="section-3-card-tag">Trailer</div>
+                                    <div class="section-3-card-content">
+                                        <h3 class="section-3-card-title">A Global CEO Teaches Mastering Time Management</h3>
+                                        <p class="section-3-card-duration">⏱ 56:32 Mins</p>
+                                        <p class="section-3-card-name">Sanjay Sehgal</p>
+                                        <p class="section-3-card-role">Chairman & CEO at Msys Technologies</p>
+                                        <a href="#" class="section-3-card-link">What You will Learn →</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="content2" class="tab-content">
+                        <div class="section-3-card-container d-flex flex-row justify-content-center ">
+                                <div class="section-3-card ">
+                                    <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/goutam.png" alt="Speaker Image" class="section-3-card-image">
+                                    <div class="section-3-card-content">
+                                        <h3 class="section-3-card-title">An Engineer at Meta Teaches You About Designing Technology</h3>
+                                        <p class="section-3-card-duration">⏱ 50:46 Mins</p>
+                                        <p class="section-3-card-name">Goutham Reddy</p>
+                                        <p class="section-3-card-role">Platform Security engineer meta USA</p>
+                                        <a href="#" class="section-3-card-link">What You will Learn →</a>
+                                    </div>
+                                </div>
+                                <div class="section-3-card ">
+                                    <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/ashok-vardhan.png" alt="Speaker Image" class="section-3-card-image">
+                                    <div class="section-3-card-content">
+                                        <h3 class="section-3-card-title">Software engineer at Google Teaches Google Mindset</h3>
+                                        <p class="section-3-card-duration">⏱ 1:23:53 Mins</p>
+                                        <p class="section-3-card-name">Ashik Vardhan Viswanadha</p>
+                                        <p class="section-3-card-role">Staff Software Engineer at Google</p>
+                                        <a href="#" class="section-3-card-link">What You will Learn →</a>
+                                    </div>
+                                </div>
+                                <div class="section-3-card ">
+                                    <img src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/sri-vidhya.png?auto=format,compress&q=80" alt="Speaker Image" class="section-3-card-image">
+                                    <div class="section-3-card-content">
+                                        <h3 class="section-3-card-title">A Scientist at Apple Teaches you About Machine Learning</h3>
+                                        <p class="section-3-card-duration">⏱ 41:27 Mins</p>
+                                        <p class="section-3-card-name">Sri Vidya Pranavi</p>
+                                        <p class="section-3-card-role">Machine Learning Scientist at Apple</p>
+                                        <a href="#" class="section-3-card-link">What You will Learn →</a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div id="content3" class="tab-content">
+                        <div class="section-3-card-container d-flex flex-row justify-content-center ">
+                                <div class="section-3-card ">
+                                    <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/abhinav.png" alt="Speaker Image" class="section-3-card-image">
+                                    <div class="section-3-card-content">
+                                        <h3 class="section-3-card-title">A software engineer at Twitter teaches Coder's mindset</h3>
+                                        <p class="section-3-card-duration">⏱ 50:36 Mins</p>
+                                        <p class="section-3-card-name">Abhinav Reddy</p>
+                                        <p class="section-3-card-role">Software Development Engineer, Twitter</p>
+                                        <a href="#" class="section-3-card-link">What You will Learn →</a>
+                                    </div>
+                                </div>
+                          
+                                <div class="section-3-card ">
+                                    <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/goutam.png" alt="Speaker Image" class="section-3-card-image">
+
+                                    <div class="section-3-card-content">
+                                        <h3 class="section-3-card-title">An Engineer at Meta Teaches You About Designing Technology</h3>
+                                        <p class="section-3-card-duration">⏱ 50:46 Mins</p>
+                                        <p class="section-3-card-name">Goutham Reddy</p>
+                                        <p class="section-3-card-role">PLatform Security Engineer at Meta USA</p>
+                                        <a href="#" class="section-3-card-link">What You will Learn →</a>
+                                    </div>
+                                </div>
+
+                                <div class="section-3-card ">
+                                    <img src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/nikhil.png?auto=format,compress&q=80" alt="Speaker Image" class="section-3-card-image">
+                                    <div class="section-3-card-content">
+                                        <h3 class="section-3-card-title">A Siftware Engineer at Uber Teaches You About Coding</h3>
+                                        <p class="section-3-card-duration">⏱ 14:48 Mins</p>
+                                        <p class="section-3-card-name">Nikhil VAVS</p>
+                                        <p class="section-3-card-role">Software Engineer at Uber</p>
+                                        <a href="#" class="section-3-card-link">What You will Learn →</a>
+                                    </div>
+                                </div>
+
+                        </div>
+                    </div>
+                    <div id="content4" class="tab-content">
+                       <div class="section-3-card-container d-flex flex-row justify-content-center ">
+                                
+                            <div class="section-3-card ">
+                                    <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/deepa-wadhwani.png" alt="Speaker Image" class="section-3-card-image">
+                                    <div class="section-3-card-content">
+                                        <h3 class="section-3-card-title">HR Lead of ADP Teaches Mastering Interviews</h3>
+                                        <p class="section-3-card-duration">⏱ 31:09 Mins</p>
+                                        <p class="section-3-card-name">Deepa Wadhwani</p>
+                                        <p class="section-3-card-role">Director - Lead Aquisition of ADP</p>
+                                        <a href="#" class="section-3-card-link">What You will Learn →</a>
+                                    </div>
+                                </div>
+                            
+                                <div class="section-3-card ">
+                                    <img src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/hari-tn.png?auto=format,compress&q=80" alt="Speaker Image" class="section-3-card-image">
+                                    <div class="section-3-card-content">
+                                        <h3 class="section-3-card-title">The HR Head of Big Bsket Teaches You About Building a Career</h3>
+                                        <p class="section-3-card-duration">⏱ 43:19 Mins</p>
+                                        <p class="section-3-card-name">Hari TN</p>
+                                        <p class="section-3-card-role">Head HR, Big Basket</p>
+                                        <a href="#" class="section-3-card-link">What You will Learn →</a>
+                                    </div>
+                                </div>
+                           
+                                <div class="section-3-card ">
+                                    <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/siva-ghani-reddy.png" alt="Speaker Image" class="section-3-card-image">
+                                    <div class="section-3-card-content">
+                                        <h3 class="section-3-card-title">A Sr. Manager at Microsoft Teaches Product Management</h3>
+                                        <p class="section-3-card-duration">⏱ 01:01:13 Mins</p>
+                                        <p class="section-3-card-name">Siva Ghani Reddy</p>
+                                        <p class="section-3-card-role">Senior Product Manager at Microsoft</p>
+                                        <a href="#" class="section-3-card-link">What You will Learn →</a>
+                                    </div>
+                                </div>
+                           
+                        </div>
+                    </div>
+                    <div id="content5" class="tab-content">
+                        <div class="section-3-card-container d-flex flex-row justify-content-center ">
+                           
+                                <div class="section-3-card ">
+                                    <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/shiva-kumar.png" alt="Speaker Image" class="section-3-card-image">
+                                    <div class="section-3-card-content">
+                                        <h3 class="section-3-card-title">A Chief Technology Officer at Clice Teaches Leadership</h3>
+                                        <p class="section-3-card-duration">⏱ 01:06:52 Mins</p>
+                                        <p class="section-3-card-name">Shiva Kumar</p>
+                                        <p class="section-3-card-role">Chief Technology Officer at Slice</p>
+                                        <a href="#" class="section-3-card-link">What You will Learn →</a>
+                                    </div>
+                                </div>
+                           
+                                <div class="section-3-card ">
+                                    <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/sanjay-sehgal.png" alt="Speaker Image" class="section-3-card-image">
+                                    <div class="section-3-card-content">
+                                        <h3 class="section-3-card-title">A CEO at Msys Teaches Innovation & Entrepreneurship</h3>
+                                        <p class="section-3-card-duration">⏱ 49:07 Mins</p>
+                                        <p class="section-3-card-name">Sanjay Sehgal</p>
+                                        <p class="section-3-card-role">Chairman & CEO at Msys Technologies</p>
+                                        <a href="#" class="section-3-card-link">What You will Learn →</a>
+                                    </div>
+                                </div>
+                           
+                                <div class="section-3-card ">
+                                    <img src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/rakesh-mishra.png?auto=format,compress&q=80" alt="Speaker Image" class="section-3-card-image">
+                                    <div class="section-3-card-content">
+                                        <h3 class="section-3-card-title">The Co-founder of Uhana Teaches You About 5G</h3>
+                                        <p class="section-3-card-duration">⏱ 48:49 Mins</p>
+                                        <p class="section-3-card-name">Rakesh Mishra</p>
+                                        <p class="section-3-card-role">Co-founder of Uhana, PhD at Standford University</p>
+                                        <a href="#" class="section-3-card-link">What You will Learn →</a>
+                                    </div>
+                                </div>
+                           
+                        </div>
+                    </div>
+                    <div id="content6" class="tab-content">
+                        <div class="section-3-card-container d-flex flex-row justify-content-center ">
+                            
+                                <div class="section-3-card ">
+                                    <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/kiran.png" alt="Speaker Image" class="section-3-card-image">
+                                    <div class="section-3-card-content">
+                                        <h3 class="section-3-card-title">An Engineeringat Google Teaches Thriving in Tech & Life</h3>
+                                        <p class="section-3-card-duration">⏱ 54:27 Mins</p>
+                                        <p class="section-3-card-name">Sai Kiran Gorthi</p>
+                                        <p class="section-3-card-role">Software Engineer at Google</p>
+                                        <a href="#" class="section-3-card-link">What You will Learn →</a>
+                                    </div>
+                                </div>
+                           
+                                <div class="section-3-card ">
+                                    <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/sanjay.png" alt="Speaker Image" class="section-3-card-image">
+                                    <div class="section-3-card-content">
+                                        <h3 class="section-3-card-title">A Global CEO Teaches Mastering Time Management</h3>
+                                        <p class="section-3-card-duration">⏱ 56:32 Mins</p>
+                                        <p class="section-3-card-name">Sanjay Sehgal</p>
+                                        <p class="section-3-card-role">Chairman and CEO at Msys Technology</p>
+                                        <a href="#" class="section-3-card-link">What You will Learn →</a>
+                                    </div>
+                                </div>
+                           
+                                <div class="section-3-card ">
+                                    <img src="https://cdn.prod.website-files.com/64362e90abbff481a6d25ce8/6690c3b977eb17ab2fe49ddb_krishna-raghavan-thumbnail.webp" alt="Speaker Image" class="section-3-card-image">
+                                    <div class="section-3-card-content">
+                                        <h3 class="section-3-card-title">Discover what the top 1% Professionals do differently</h3>
+                                        <p class="section-3-card-duration">⏱ 41:23 Mins</p>
+                                        <p class="section-3-card-name">Krishna Raghavan</p>
+                                        <p class="section-3-card-role">People and Tech Leader</p>
+                                        <a href="#" class="section-3-card-link">What You will Learn →</a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div id="content7" class="tab-content">
+                        <div class="section-3-card-container d-flex flex-row justify-content-center ">
+                           
+                                <div class="section-3-card ">
+                                    <img src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/rahul-garg.png?auto=format,compress&q=80" alt="Speaker Image" class="section-3-card-image">
+                                    <div class="section-3-card-content">
+                                        <h3 class="section-3-card-title">GSOC Alumuni Teaches You About Cracking GSOC</h3>
+                                        <p class="section-3-card-duration">⏱ 46 Mins</p>
+                                        <p class="section-3-card-name">Rahul Garg</p>
+                                        <p class="section-3-card-role">IIIT Hyderabad, GSOC Alumnus</p>
+                                        <a href="#" class="section-3-card-link">What You will Learn →</a>
+                                    </div>
+                                </div>
+                           
+                                <div class="section-3-card ">
+                                    <img src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/nirmal-manoj.png?auto=format,compress&q=80" alt="Speaker Image" class="section-3-card-image">
+                                    <div class="section-3-card-content">
+                                        <h3 class="section-3-card-title">GSOC Alumuni teaches You About the GSOC process</h3>
+                                        <p class="section-3-card-duration">⏱ 46 Mins</p>
+                                        <p class="section-3-card-name">Nirmal Manoj</p>
+                                        <p class="section-3-card-role">IIIT Hyderabad, GSOC Alumnus</p>
+                                        <a href="#" class="section-3-card-link">What You will Learn →</a>
+                                    </div>
+                                </div>
+                            
+                                <div class="section-3-card ">
+                                    <img src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/sivay-lamba.png?auto=format,compress&q=80" alt="Speaker Image" class="section-3-card-image">
+                                    <div class="section-3-card-content">
+                                        <h3 class="section-3-card-title">GSOC Mentor Teaches You About Success Strategies for GSOC</h3>
+                                        <p class="section-3-card-duration">⏱ 47 Mins</p>
+                                        <p class="section-3-card-name">Mr. Shivay Lamba</p>
+                                        <p class="section-3-card-role">CTO, DarkHorse</p>
+                                        <a href="#" class="section-3-card-link">What You will Learn →</a>
+                                    </div>
+                                </div>
+                        
+                        </div>
+                    </div>
+                    <div id="content8" class="tab-content">
+                        <div class="section-3-card-container d-flex flex-row justify-content-center ">
+
+                                <div class="section-3-card ">
+                                    <img src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/panel-2.png?auto=format,compress&q=80" alt="Speaker Image" class="section-3-card-image">
+                                    <div class="section-3-card-content">
+                                        <h3 class="section-3-card-title">MAANG Experts Teach You About Securing Dream Jobs</h3>
+                                        <p class="section-3-card-duration">⏱ 1:00:11 Mins</p>
+                                        <p class="section-3-card-name">Expert Panel</p>
+                                        <a href="#" class="section-3-card-link">What You will Learn →</a>
+                                    </div>
+                                </div>
+                            
+                                <div class="section-3-card ">
+                                    <img src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/panel-1.png?auto=format,compress&q=80" alt="Speaker Image" class="section-3-card-image">
+                                    <div class="section-3-card-content">
+                                        <h3 class="section-3-card-title">HR Leaders Teach You About Acing Interviews</h3>
+                                        <p class="section-3-card-duration">⏱ 1:09:54 Mins</p>
+                                        <p class="section-3-card-name">Expert Panel</p>
+                                        <a href="#" class="section-3-card-link">What You will Learn →</a>
+                                    </div>
+                                </div>
+                            
+                                <div class="section-3-card ">
+                                    <img src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/panel-3.png?auto=format,compress&q=80" alt="Speaker Image" class="section-3-card-image">
+                                    <div class="section-3-card-content">
+                                        <h3 class="section-3-card-title">Expert Engineers Teach You About 4.0 Technologies</h3>
+                                        <p class="section-3-card-duration">⏱ 1:00:11 Mins</p>
+                                        <p class="section-3-card-name">Expert Panel</p>
+                                        <a href="#" class="section-3-card-link">What You will Learn →</a>
+                                    </div>
+                                </div>
+
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <a href="#sectionClaimFreeAccess" class="d-flex justify-content-center">
+                    <button class="claim-free-access-button">Claim Free Access</button>
+                </a>
+                <p class="get-podcast-free-text text-center pb-5">Get 1 podcast worth 
+                    <span style="  text-decoration: line-through; text-decoration-color: #A3E635;text-decoration-thickness: 3px" > ₹2000 </span>
+                    <span style="font-weight: bold; color:#A3E635 ; font-size: 20px"> FREE </span>
+                </p>
+            </div>
+        </section>
+        <section id =  "sectionTestimonials">
+            <div class="testimonial-background">
+                <h1 class="testimonial-heading">Students Say, <br> It's a blockbuster!</h1>
+                <div style="text-align: center">
+                <h2 class="testimonial-subheading">😍 25000+ Happy Feedbacks</h2>
+                </div>
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+                
+        <div class="carousel">
+            <!-- Slide 1 -->
+
+            <div class="testimonial-card" id="testimonial-card1">
+                <div class="testimonial-profile">
+                    <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/neha-panakanapalli-linkedin-profile-pic.png" alt="Neha">
+                    <div>
+                        <h3 class="testimonial-card-name">Neha Panakanapalli</h3>
+                        <p class="testimonial-card-feedback">Fellow at CCBP 4.0 Academy | NxtWave</p>
+                    </div>
+                </div>
+                <p class="testimonial-message">
+                    These podcasts are really special! I started listening from a student perspective and ended up learning the product manager's perspective...
+                    <a href="https://www.linkedin.com/posts/neha-panakanapalli-074210247_team-project-interview-activity-7025378367503831040-j9E6/?utm_source=share&utm_medium=member_desktop" target="_blank">Read More on LinkedIn</a>
+                </p>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="testimonial-card" id="testimonial-card2">
+                <div class="testimonial-profile">
+                    <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/rahul-gunturi-linkedin-profile-pic.png" alt="Rahul">
+                    <div>
+                        <h3 class="testimonial-card-name">Rahul Guturi</h3>
+                        <p class="testimonial-card-feedback">Fellow at CCBP 4.0 Academy | NxtWave</p>
+                    </div>
+                </div>
+                <p class="testimonial-message">
+                    The podcast with Sanjay Sehgal, CEO of MSys Technologies, is incredibly valuable. I took nine pages of notes...
+                    <a href="https://www.linkedin.com/posts/rrahulguturii_saikirangorthi-nxtwave-google-activity-7030427567677468672-SU3Y/?utm_source=share&utm_medium=member_desktop" target="_blank">Read More on LinkedIn</a>
+                </p>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="testimonial-card" id="testimonial-card3">
+                <div class="testimonial-profile">
+                    <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/rupesh-reddy-loka-linkedin-profile-pic.png" alt="Rupesh">
+                    <div>
+                        <h3 class="testimonial-card-name">Rupesh Reddy</h3>
+                        <p class="testimonial-card-feedback">Fellow at CCBP 4.0 Academy | NxtWave</p>
+                    </div>
+                </div>
+                <p class="testimonial-message">
+                    After Gowtham sir's podcast, I understood some of his insights and explained some points!...
+                    <a href="https://www.linkedin.com/posts/rupesh-reddy-loka_podcast-gowthamreddy-nxtwave-activity-6982297960650850304-uCVU/?utm_source=share&utm_medium=member_desktop" target="_blank">Read More on LinkedIn</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Dot Navigation -->
+                <div class="dots">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                </div>
+
+
+            </div>
+        </section>
+        <section id="sectionPodcast">
+            <div class="podcast-section-background">
+                <h1 class="podcast-section-heading">NxtWave's Empowering Podcast Series <br> to Shape your Dream Career</h1>
+                <ul class="features-list">
+                    <li class="features-icon">
+                        🎙️ 100+ Podcasts
+                    </li>
+                    <li class="features-icon">
+                        💰 Each worth ₹2000/-
+                    </li>
+                    <li class="features-icon">
+                       🔥FREE for NxtWave Academy students
+                    </li>
+                </ul>
+                <div class = "d-flex flex-row justify-content-start">
+                    <a href="#sectionClaimFreeAccess">
+                        <button class="claim-free-access-button podcast-section-button">Claim Free Access</button>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+        <section id ="sectionClaimFreeAccess">
+            <div class="claim-free-access-section-background">
+                <div class="d-flex flex-row justify-content-center">
+                    <h1 class="free-access-heading"> Claim Your <br> Free Access to a Podcast </h1>
+                    <div class="d-flex flex-column access-form-container ">
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <div class="phone-input-group">
+                                    <select class="country-code-select" id="countryCode" name="countryCode">
+                                        <option value="+91">IN +91</option>
+                                        </select>
+                                    <input type="tel" id="phone" name="phone" placeholder="Enter 10 Digit Mobile Number">
+                                </div>
+                            </div>
+                            <button type= "submit" class ="otp-button">Get OTP</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <section id = "sectionDisclaimer">
+            <div class="disclaimer-section-background">
+                <h1 class="disclaimer-text">* The speaker profiles are as on the recorded date </h1>
+            </div>
+        </section>
+        <section id="sectionFooter">
+            <div class="footer-section-background">
+                <footer class="main-footer">
+                 <div class="footer-top">
+                    <div class="footer-col footer-branding">
+                        <a href="https://www.ccbp.in/?_gl=1*1cxizrl*_ga*NTgzMTk4OTY1LjE3NDI1NzIzMjk.*_ga_VNJELL2WMV*czE3NTAxODA4OTYkbzE4JGcxJHQxNzUwMTgwOTEwJGo0NiRsMCRoMA.." target="_blank">
+                            <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/Nxtwave_White_logo.svg" alt="NxtWave Logo" class="footer-logo">
+                        </a>
+                        <h4 class="reach-us-heading">Reach Us</h4>
+                        <div class="contact-item">
+                            <span class="icon">📧</span>
+                            <a href="mailto:support@nxtwave.tech">support@nxtwave.tech</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-col footer-links">
+                        <h4 class="footer-heading">Quick Links</h4>
+                        <div class="links-group">
+                            <ul>
+                                <li><a href="https://www.ccbp.in/" target="_blank">Home</a></li>
+                                <li><a href="https://www.ccbp.in/academy" target="_blank">Academy</a></li>
+                                <li><a href="https://www.ccbp.in/intensive" target="_blank">Intensive</a></li>
+                                <li><a href="https://www.ccbp.in/hire" target="_blank">Hire with us</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="https://www.ccbp.in/contact-us" target="_blank">Contact Us</a></li>
+                                <li><a href="https://www.ccbp.in/about" target="_blank">About Us</a></li>
+                                <li><a href="https://www.ccbp.in/reviews" target="_blank">Reviews</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer-col footer-payments-address">
+                        <h4 class="footer-heading">Payment Methods</h4>
+                        <div class="payment-logos">
+                            <img src="https://cdn.prod.website-files.com/5fa61cbbf0d432b3230f62b1/61f3c93dfbc8568fcb27e556_visa-icon.svg" alt="Visa">
+                            <img src="https://cdn.prod.website-files.com/5fa61cbbf0d432b3230f62b1/61f3c976a29a435d3fc17f27_mastercard-icon.svg" alt="Mastercard">
+                            <img src = "https://cdn.prod.website-files.com/5fa61cbbf0d432b3230f62b1/61f3fd566ba93f145d9d5b57_rupay-icon.svg" alt="Rupay">
+                            <img src="https://cdn.prod.website-files.com/5fa61cbbf0d432b3230f62b1/61f3fcf36619310922216dcb_payment-method-icon3.svg" alt="MaterCard-2">
+                            <img src="https://cdn.prod.website-files.com/5fa61cbbf0d432b3230f62b1/61f3fcf46ba93fa0919d5828_Razor-pay-icon.svg" alt="Razorpay">
+                            <img src="https://cdn.prod.website-files.com/5fa61cbbf0d432b3230f62b1/61f3fcf34a02bed6c7dbc750_upi-icon.svg" alt="UPI">
+                        </div>
+                    <div class="contact-item address-info">
+                        <img class="icon" src = "https://cdn.prod.website-files.com/5fa61cbbf0d432b3230f62b1/618dff87c4047e7681214d33_location%20on.svg">
+                        <p>NxtWave, WeWork<br>Rajapushpa Summit,<br>Nanakramguda Rd, Financial<br>District, Manikonda Jagir,<br>Telangana 500032</p>
+                    </div>
+                </div>
+            </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-bottom">
+            <div class="social-icons"> 
+                <a href="https://www.facebook.com/NxtWave-106729994530632/" target="_blank">
+                    <img src="https://cdn.prod.website-files.com/5fa61cbbf0d432b3230f62b1/61f3fd520d11331f5f3b46ef_facebook-icon.svg" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/ccbp_nxtwave/" target="_blank">
+                    <img src="https://cdn.prod.website-files.com/5fa61cbbf0d432b3230f62b1/61f3fe609dc6ce25f2f7078f_instgram-icon.svg" alt="Instagram">
+                </a>
+                <a href="https://x.com/nxtwave_tech" target="_blank">
+                    <img src="https://cdn.prod.website-files.com/5fa61cbbf0d432b3230f62b1/61f400cc41af69932df92c8a_twitterimage.svg" alt="Twitter">
+                </a>
+                <a href="https://www.linkedin.com/company/nxtwavetech" target="_blank">
+                    <img src="https://cdn.prod.website-files.com/5fa61cbbf0d432b3230f62b1/61f3fe1a40dc31c249e1ab99_linkedin-icon.svg" alt="LinkedIn">
+                </a>
+                <a href="https://www.youtube.com/c/NxtWaveTech" target="_blank">
+                    <img src="https://cdn.prod.website-files.com/5fa61cbbf0d432b3230f62b1/62384993d97ad72405dee8d2_Frame%2031%20(1).svg" alt="YouTube">
+                </a>
+            </div>
+            <div class="legal-links">
+                <a href="https://www.ccbp.in/privacy-policy">Privacy Policy</a>
+                <a href="https://www.ccbp.in/cookie-policy">Cookie Policy</a>
+                <a href="https://www.ccbp.in/terms-and-conditions">Terms and Conditions</a>
+                <a href="https://www.ccbp.in/grievance-redressal">Grievance Redressal</a>
+                <a href="https://www.ccbp.in/corporate-information">Corporate Information</a>
+            </div>
+        </div>
+    </footer>
+            </div>
+        </section>
+    </body>
+</html>

@@ -30,7 +30,7 @@ Patience and persistence — I wanted to give up many times but didn’t
 A behind-the-scenes look at how real frontend projects are built
 
 🌐 Live Demo
-🔗 Visit the Live Site
+🔗[ Visit the Live Site](https://webclonesev.ccbp.tech/)
 
 💬 Final Notes
 🧪 This is not a responsive layout (desktop view only).
